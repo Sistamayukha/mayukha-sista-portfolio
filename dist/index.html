@@ -11,7 +11,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
@@ -33,11 +33,13 @@
       <div class="hero-copy reveal">
         <div class="status"><i></i> Open to software, AI &amp; data roles</div>
         <p class="eyebrow">AI ENGINEER · SOFTWARE ENGINEER · FULL-STACK BUILDER</p>
-        <h1 id="hero-title">Engineering intelligence for <em>real-world</em> health data.</h1>
-        <p class="hero-intro">I build reliable backend systems, AI pipelines, and full-stack products—specializing in clinical data, intelligent retrieval, and production-minded software.</p>
+        <h1 id="hero-title">Software engineering for <em>AI, data, and health technology.</em></h1>
+        <p class="hero-intro">I design and build reliable backend platforms, machine-learning workflows, data systems, and full-stack products—from clinical interoperability and medical imaging to knowledge graphs and production APIs.</p>
         <div class="hero-actions">
           <a class="button button-dark" href="#work">Explore selected work <span>↓</span></a>
           <a class="text-link" href="mailto:fe67016@umbc.edu">Start a conversation <span>↗</span></a>
+          <a class="text-link" href="https://www.linkedin.com/in/sistamayukha3010/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          <a class="text-link" href="https://github.com/Sistamayukha" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
         </div>
         <div class="hero-meta">
           <span>Based in Baltimore, MD</span>
@@ -70,10 +72,10 @@
     </section>
 
     <section class="signal-strip" aria-label="Selected engineering outcomes">
-      <div><strong>03</strong><span>Clinical AI projects</span></div>
-      <div><strong>600+</strong><span>Research abstracts processed</span></div>
+      <div><strong>15</strong><span>Public GitHub repositories</span></div>
+      <div><strong>75GB</strong><span>Medical imaging dataset</span></div>
+      <div><strong>4,478</strong><span>Knowledge-graph triples</span></div>
       <div><strong>35%</strong><span>Application response improvement</span></div>
-      <div><strong>02</strong><span>Published research works</span></div>
     </section>
 
     <section class="work section-shell" id="work" aria-labelledby="work-title">
@@ -85,14 +87,15 @@
       <article class="project project-featured reveal">
         <div class="project-copy">
           <div class="project-index">01 / CLINICAL RETRIEVAL</div>
-          <h3>Clinical Trial Matching Platform</h3>
-          <p>Backend microservices that combine vector retrieval, structured clinical data, and API-based search to make trial discovery more reliable and traceable.</p>
+          <h3>Neuro-Symbolic Pediatric Oncology Trial Matching</h3>
+          <p>A clinical decision-support prototype that combines structured patient information, neuro-symbolic reasoning, and retrieval workflows to make pediatric oncology trial discovery more explainable and traceable.</p>
           <ul class="project-points">
             <li>Built FHIR ingestion for structured and unstructured healthcare data</li>
             <li>Transformed inputs into validated JSON with fallback handling</li>
             <li>Centralized logs across services for operational traceability</li>
           </ul>
           <div class="tags"><span>Python</span><span>FastAPI</span><span>FHIR</span><span>RAG</span><span>Microservices</span></div>
+          <a class="repo-link" href="https://github.com/Sistamayukha/Neuro-Symbolic-Pediatric-Oncology-Trial-Matching-Assistant" target="_blank" rel="noreferrer">View repository <span>↗</span></a>
         </div>
         <div class="project-art trial-art" aria-label="Illustration of a clinical trial matching pipeline">
           <div class="pipeline-label">PATIENT PROFILE</div>
@@ -108,9 +111,10 @@
           <div class="project-index">02 / MEDICAL IMAGING</div>
           <div class="mini-art diffusion-art" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
           <h3>Tumor Progression Dynamics</h3>
-          <p>A custom UNet-based diffusion model forecasting spatial breast cancer tumor growth from medical imaging sequences.</p>
-          <div class="outcome"><strong>75%</strong><span>predictive accuracy</span></div>
+          <p>A research prototype applying a custom UNet-based DDPM to longitudinal breast-cancer imaging, with transparent evaluation of reconstruction quality, compute constraints, and clinical-deployment limitations.</p>
+          <div class="outcome"><strong>75GB</strong><span>longitudinal imaging dataset</span></div>
           <div class="tags"><span>PyTorch</span><span>DDPM</span><span>UNet</span></div>
+          <a class="repo-link" href="https://github.com/Sistamayukha/Diffusion_Based_Model_for_Tumor_Progression" target="_blank" rel="noreferrer">View repository <span>↗</span></a>
         </article>
         <article class="project project-small project-dark reveal">
           <div class="project-index">03 / CLINICAL NLP</div>
@@ -127,25 +131,37 @@
           <div class="project-index">04 / KNOWLEDGE SYSTEMS</div>
           <h3>Climate Intelligence Search</h3>
         </div>
-        <p>Automated ingestion and normalization for 600+ academic abstracts, with a Neo4j graph layer enabling multi-hop traversal and natural-language discovery.</p>
-        <div class="tags"><span>FastAPI</span><span>Neo4j</span><span>NLP</span><span>External APIs</span></div>
+        <p>An end-to-end scientific NLP system built from 601 abstracts: fine-tuned SciBERT models, 4,478 extracted triples, a 1,125-node knowledge graph, graph analytics, and an interactive query interface.</p>
+        <div><div class="tags"><span>SciBERT</span><span>Knowledge Graph</span><span>Flask</span><span>D3.js</span></div><a class="repo-link" href="https://github.com/Sistamayukha/Climate_Intelligent_System" target="_blank" rel="noreferrer">View repository <span>↗</span></a></div>
       </article>
+
+      <div class="repository-showcase reveal">
+        <div class="repository-heading"><p class="eyebrow">MORE ENGINEERING WORK</p><h3>Applied projects across computer vision, responsible AI, analytics, and web development.</h3></div>
+        <div class="repository-grid">
+          <a href="https://github.com/Sistamayukha/Post_Disaster_Building_Damage_Assesment_Using_Deep_Learning" target="_blank" rel="noreferrer"><span>COMPUTER VISION</span><strong>Post-Disaster Building Damage Assessment</strong><p>Siamese UNet semantic segmentation on paired satellite imagery for building localization and damage classification.</p><i>PyTorch · Geospatial AI · xView2 ↗</i></a>
+          <a href="https://github.com/Sistamayukha/CyberbullyingDetection" target="_blank" rel="noreferrer"><span>RESPONSIBLE AI</span><strong>Cyberbullying Detection</strong><p>Research and implementation work focused on identifying harmful online language and supporting safer digital environments.</p><i>NLP · Classification · Research ↗</i></a>
+          <a href="https://github.com/Sistamayukha/videosurveillanceOPENCV" target="_blank" rel="noreferrer"><span>COMPUTER VISION</span><strong>Video Surveillance Object Detection</strong><p>An OpenCV-based machine-learning project for object detection in video-surveillance systems.</p><i>Python · OpenCV · ML ↗</i></a>
+          <a href="https://github.com/Sistamayukha/employeeperformanceanalysis" target="_blank" rel="noreferrer"><span>DATA ANALYTICS</span><strong>Employee Performance Analysis</strong><p>A notebook-based data-analysis project exploring patterns and performance signals in workforce data.</p><i>Python · Analytics · Jupyter ↗</i></a>
+          <a href="https://github.com/Sistamayukha/job_portal" target="_blank" rel="noreferrer"><span>WEB ENGINEERING</span><strong>Job Portal</strong><p>A web application demonstrating product workflow design, server-side development, and structured data handling.</p><i>PHP · Web · Database ↗</i></a>
+          <a href="https://github.com/Sistamayukha" target="_blank" rel="noreferrer"><span>FULL PROFILE</span><strong>Explore all 15 public repositories</strong><p>Additional work includes portfolio systems, technical publishing, navigation components, and research implementations.</p><i>Open GitHub profile ↗</i></a>
+        </div>
+      </div>
     </section>
 
     <section class="experience section-shell" id="experience" aria-labelledby="experience-title">
       <div class="section-heading compact reveal">
-        <div><p class="eyebrow">EXPERIENCE</p><h2 id="experience-title">Building from architecture to interface.</h2></div>
+        <div><p class="eyebrow">PROFESSIONAL EXPERIENCE</p><h2 id="experience-title">Engineering ownership across systems, data, and product.</h2></div>
       </div>
       <div class="timeline">
         <article class="timeline-item reveal">
           <div class="timeline-date">DEC 2025 — AUG 2026</div>
           <div><h3>Artificial Intelligence Engineer</h3><p class="company">Platinum Business Services · Baltimore, MD</p></div>
-          <p>Developed Python and FastAPI microservices, REST integrations, and CI/CD workflows. Diagnosed data-flow defects and documented service architecture for maintainable production systems.</p>
+          <div class="experience-detail"><p>Built and maintained backend services that synchronized data across enterprise systems, with responsibility spanning API integration, debugging, release workflows, and operational documentation.</p><ul><li>Developed Python and FastAPI microservices with REST integrations for multi-system data exchange.</li><li>Investigated integration and data-flow failures using validation, application logs, and service-level troubleshooting.</li><li>Contributed to CI/CD workflows that improved the consistency of backend testing and deployment.</li><li>Documented API architecture, dependencies, and operating workflows to support maintainability and onboarding.</li></ul><div class="tags"><span>Python</span><span>FastAPI</span><span>REST APIs</span><span>CI/CD</span><span>System Integration</span></div></div>
         </article>
         <article class="timeline-item reveal">
           <div class="timeline-date">JAN 2026 — JUN 2026</div>
           <div><h3>Technical Co-Founder</h3><p class="company">CeeVlo LLC · Baltimore, MD</p></div>
-          <p>Built a React, FastAPI, PostgreSQL, and Supabase platform with OAuth 2.0, role-based access, real-time workflows, Dockerized services, and a 35% application response improvement.</p>
+          <div class="experience-detail"><p>Led the technical build of a membership and administration platform, translating product requirements into a secure full-stack architecture and reusable application workflows.</p><ul><li>Built React interfaces, FastAPI services, and PostgreSQL/Supabase data models for member and administrative operations.</li><li>Designed REST endpoints and relational schemas that improved application response performance by 35%.</li><li>Implemented OAuth 2.0 and role-based access control for protected administrative workflows.</li><li>Containerized services with Docker to create consistent development and deployment environments.</li></ul><div class="tags"><span>React</span><span>FastAPI</span><span>PostgreSQL</span><span>Supabase</span><span>OAuth 2.0</span><span>Docker</span></div></div>
         </article>
       </div>
     </section>
@@ -153,16 +169,20 @@
     <section class="stack section-shell" id="stack" aria-labelledby="stack-title">
       <div class="stack-intro reveal">
         <p class="eyebrow">ENGINEERING TOOLKIT</p>
-        <h2 id="stack-title">A full-stack lens, with an AI systems core.</h2>
-        <p>I work across the system: data ingestion, model workflows, APIs, databases, secure product interfaces, and deployment.</p>
+        <h2 id="stack-title">A practical toolkit for production software and applied AI.</h2>
+        <p>I work across the complete delivery path: data preparation, model development, service architecture, secure interfaces, testing, deployment, and operational reliability.</p>
       </div>
       <div class="stack-groups">
-        <article class="stack-card reveal"><span>01</span><h3>Languages</h3><p>Python · Java · JavaScript · TypeScript · SQL</p></article>
-        <article class="stack-card reveal"><span>02</span><h3>Backend &amp; APIs</h3><p>FastAPI · Django · Node.js · REST · Microservices</p></article>
-        <article class="stack-card reveal"><span>03</span><h3>Data</h3><p>PostgreSQL · MongoDB · Supabase · Neo4j · FHIR</p></article>
-        <article class="stack-card reveal"><span>04</span><h3>AI &amp; ML</h3><p>PyTorch · TensorFlow · Scikit-learn · RAG · Hugging Face</p></article>
-        <article class="stack-card reveal"><span>05</span><h3>Cloud &amp; DevOps</h3><p>AWS · Google Cloud · Docker · Kubernetes · CI/CD · Linux</p></article>
-        <article class="stack-card reveal"><span>06</span><h3>Engineering</h3><p>System design · OOP · DSA · Testing · Debugging · Agile</p></article>
+        <article class="stack-card reveal"><span>01</span><h3>Languages</h3><p>Python · Java · C/C++ · JavaScript · TypeScript · SQL · PHP</p></article>
+        <article class="stack-card reveal"><span>02</span><h3>Backend &amp; APIs</h3><p>FastAPI · Django · Flask · Node.js · REST APIs · Microservices · JSON</p></article>
+        <article class="stack-card reveal"><span>03</span><h3>Frontend</h3><p>React · HTML5 · CSS3 · Responsive UI · Reusable Components · D3.js</p></article>
+        <article class="stack-card reveal"><span>04</span><h3>Databases &amp; Graphs</h3><p>PostgreSQL · MongoDB · Supabase · Neo4j · NetworkX · Relational Modeling</p></article>
+        <article class="stack-card reveal"><span>05</span><h3>AI &amp; Machine Learning</h3><p>PyTorch · TensorFlow · Scikit-learn · Hugging Face · SciBERT · NLP · Computer Vision</p></article>
+        <article class="stack-card reveal"><span>06</span><h3>Generative AI</h3><p>RAG · Vector Retrieval · LLM Evaluation · Diffusion Models · Prompt Engineering</p></article>
+        <article class="stack-card reveal"><span>07</span><h3>Clinical &amp; Scientific Data</h3><p>FHIR · DICOM · Clinical NLP · Medical Imaging · Knowledge Graphs · Data Validation</p></article>
+        <article class="stack-card reveal"><span>08</span><h3>Cloud &amp; DevOps</h3><p>AWS · Google Cloud · Docker · Kubernetes · CI/CD · Git · Linux</p></article>
+        <article class="stack-card reveal"><span>09</span><h3>Security &amp; Reliability</h3><p>OAuth 2.0 · RBAC · Input Validation · Fallback Handling · Centralized Logging · Debugging</p></article>
+        <article class="stack-card reveal"><span>10</span><h3>Software Engineering</h3><p>System Design · OOP · Data Structures · Algorithms · Testing · Agile/Scrum · Documentation</p></article>
       </div>
     </section>
 
@@ -171,8 +191,10 @@
         <div class="about-mark" aria-hidden="true">M<span>S</span></div>
         <div class="about-copy">
           <p class="eyebrow">ABOUT MAYUKHA</p>
-          <h2 id="about-title">I care about the point where complex data becomes dependable software.</h2>
-          <p>I’m a Computer Science M.S. candidate at the University of Maryland, Baltimore County, with hands-on experience in backend engineering, AI applications, full-stack product development, and research. My clinical projects shaped how I think: validate inputs, design for traceability, and make sophisticated systems understandable to the people who use them.</p>
+          <h2 id="about-title">I build across domains, with engineering rigor as the constant.</h2>
+          <p>I’m a software and AI engineer and Computer Science M.S. candidate at the University of Maryland, Baltimore County. My work spans enterprise integrations, full-stack product development, clinical interoperability, medical imaging, scientific NLP, computer vision, knowledge graphs, and research-driven machine learning.</p>
+          <p>I’m strongest where disciplines meet: translating an ambiguous problem into a structured data model, a reliable API, a measurable model workflow, and a product people can actually use. Whether the domain is pediatric oncology, climate science, disaster response, or business operations, I bring the same approach—understand the data, design the system carefully, validate failure paths, document decisions, and build for maintainability.</p>
+          <p>I’m targeting software engineering, AI engineering, data engineering, and full-stack roles where I can contribute across architecture and implementation while continuing to deepen my work in responsible, high-impact technology.</p>
           <div class="education"><span>EDUCATION</span><p><strong>M.S. Computer Science</strong><br />University of Maryland, Baltimore County · GPA 3.50 / 4.00<br />Expected December 2026</p></div>
         </div>
       </div>
