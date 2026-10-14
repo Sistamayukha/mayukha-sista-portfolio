@@ -66,3 +66,30 @@ body{font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 @media(max-width:980px){.portrait-stage{min-height:620px}.portrait-avatar{width:min(76%,580px)}}
 @media(max-width:720px){.portrait-stage{min-height:535px;border-radius:25px}.portrait-topline{top:18px;left:18px;right:18px}.portrait-rings{width:430px;height:430px}.portrait-avatar{width:min(92%,500px);bottom:-10px}.portrait-chip{padding:9px 10px}.chip-ai{top:90px;left:12px}.chip-data{top:190px;right:10px}.chip-health{bottom:96px;left:10px}.portrait-footer{left:18px;right:18px;bottom:15px}.portrait-footer span{max-width:230px}}
 @media(prefers-reduced-motion:reduce){.portrait-avatar,.portrait-rings,.portrait-glow,.portrait-chip{animation:none}}
+
+/* Readability refinements */
+.work>.project:first-child{margin-top:0}
+.project-featured h3{font-size:clamp(44px,4.4vw,66px)}
+.project-small h3{font-size:clamp(38px,3.25vw,50px);line-height:1.08}
+.project-horizontal h3{font-size:clamp(36px,3vw,46px)}
+.repository-grid strong{font-size:23px;line-height:1.22}
+.experience .eyebrow,.stack .eyebrow,.about .eyebrow{font-size:15px;letter-spacing:.1em}
+.timeline-date{font-size:15px!important;font-weight:500;line-height:1.55;color:var(--lime);letter-spacing:.03em}
+.company{font-size:11px!important}
+.about-domain-map{align-self:center;display:flex;flex-direction:column;gap:0;border-top:1px solid rgba(9,28,42,.28)}
+.about-domain-map>div{display:grid;grid-template-columns:40px 1fr;align-items:center;padding:18px 0;border-bottom:1px solid rgba(9,28,42,.28)}
+.about-domain-map span{font-family:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;font-size:9px;letter-spacing:.08em}
+.about-domain-map strong{font-size:clamp(26px,3vw,44px);font-weight:600;letter-spacing:-.04em;line-height:1}
+.about-domain-map p{margin:24px 0 0;font-family:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;font-size:10px;line-height:1.8;letter-spacing:.05em;color:rgba(9,28,42,.68)}
+.publications h3{font-size:clamp(38px,3.5vw,50px)}
+.publications li{font-size:19px;line-height:1.48;padding:28px 0}
+.publications li span,.publications li small{font-size:11px;line-height:1.5}
+@media(max-width:980px){.about-domain-map{max-width:540px}.about-domain-map>div{grid-template-columns:48px 1fr}}
+@media(max-width:720px){.project-featured h3{font-size:40px}.project-small h3{font-size:36px}.project-horizontal h3{font-size:34px}.experience .eyebrow,.stack .eyebrow,.about .eyebrow{font-size:13px}.timeline-date{font-size:13px!important}.publications li{font-size:17px}.about-domain-map{margin-bottom:18px}}
+
+.project-image{position:relative;height:220px;margin:0 0 34px;overflow:hidden;border-radius:17px;background:#07131d;border:1px solid rgba(9,28,42,.14)}
+.project-image img{display:block;width:100%;height:100%;object-fit:contain}
+.project-image figcaption{position:absolute;left:12px;bottom:10px;padding:5px 8px;border-radius:7px;background:rgba(9,28,42,.78);color:rgba(255,255,255,.82);font-family:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;font-size:8px;letter-spacing:.04em;backdrop-filter:blur(8px)}
+.repository-thumb{width:100%;height:138px;margin:18px 0 2px;overflow:hidden;border-radius:12px;background:#0b1c28;border:1px solid rgba(9,28,42,.12)}
+.repository-thumb img{display:block;width:100%;height:100%;object-fit:cover}
+@media(max-width:720px){.project-image{height:190px}.repository-thumb{height:auto;aspect-ratio:2.15/1}.repository-thumb img{object-fit:contain;background:#fff}}
