@@ -158,3 +158,12 @@ body{font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   .tech-scan{left:16px;right:16px;top:82px}
 }
 @media(prefers-reduced-motion:reduce){.portrait-avatar,.tech-scan,.portrait-chip{animation:none}}
+
+/* Compact portfolio footer with direct contact links */
+footer{display:grid;grid-template-columns:auto minmax(240px,1fr) auto auto;gap:clamp(20px,3vw,46px);align-items:center;padding:34px var(--pad);border-top:1px solid var(--line);background:var(--paper)}
+.footer-contact{display:flex;align-items:center;gap:22px}
+.footer-contact a{font-size:10px;font-weight:700;letter-spacing:.06em;padding-bottom:3px;border-bottom:1px solid rgba(2,48,71,.38);transition:color .2s,border-color .2s}
+.footer-contact a:hover{color:var(--orange);border-color:var(--orange)}
+.footer-copyright{white-space:nowrap}
+@media(max-width:900px){footer{grid-template-columns:1fr auto}.brand-footer+ p{grid-column:1 / -1;grid-row:2}.footer-contact{grid-column:1}.footer-copyright{grid-column:2}}
+@media(max-width:720px){footer{display:flex;align-items:center;padding:28px 20px;gap:16px}.footer-contact{justify-content:center;flex-wrap:wrap;gap:16px}.footer-copyright{margin:0}}
